@@ -72,8 +72,4 @@ Here are a few additional NeoVim commands that you might find useful:
 - `:q` - Quit NeoVim
 - `:w` - Save the current file
 
-With these basic commands and configurations, you should be able to get started with NeoVim and customize it to suit your development needs. Good luck!# vim_configuration
-# vim_configuration
-# vim_configuration
-# vim_configuration
-# vim_configuration
+With these basic commands and configurations, you should be able to get started with NeoVim and customize it to suit your development needs. Good luck!

@@ -10,9 +10,9 @@ The first step is to install NeoVim on your system. Here's a quick bash script y
 bash init.bash
 ```
 
-Once you have everything installed, you should have a `user/` directory with an `init.lua` file. This file will contain your personal settings and configurations. Copy the `init.lua` file into this directory ```~./config/nvim/user/```
+Once you have everything installed, you should have a `~/.config/nvim/user/` directory with an `init.lua` file. This file will contain your personal settings and configurations. Copy the `init.lua` file into this directory ```~./config/nvim/user/```
 
-Next, you'll want to add a few lines to the parent `init.lua` file. Open the file with the following command:
+Next, you'll want to add a few lines to the parent `init.lua` file (i.e `~/.config/nvim/init.lua`). Open the file with the following command:
 
 ```
 cd ~/.config/nvim/init.lua

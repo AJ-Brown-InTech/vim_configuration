@@ -44,6 +44,10 @@ if ! grep -q "lg()" ~/.${rc_file}; then
   echo '}' >> ~/.${rc_file}
 fi
 
+echo "installing fish..."
+brew update
+brew install fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 
 echo "Installing Astro vim"

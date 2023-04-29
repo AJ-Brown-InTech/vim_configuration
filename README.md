@@ -7,7 +7,7 @@ As a long-time Visual Studio Code user, I wanted to explore NeoVim as a text edi
 The first step is to install NeoVim on your system. Here's a quick bash script you can use to install/setup your neovim environment:
 
 ```bash
-init.bash
+bash init.bash
 ```
 
 Once you have everything installed, you should have a `user/` directory with an `init.lua` file. This file will contain your personal settings and configurations. Copy the `init.lua` file into this directory ```~./config/nvim/user/```

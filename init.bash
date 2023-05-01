@@ -57,7 +57,6 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 echo "Installing Astro vim"
 cd ~/.config/nvim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-cd ~/.config/nvim/
 mkdir user/
 cd user/
 git clone https://github.com/AJ-Brown-InTech/Astro_config ~/.config/nvim/lua/user

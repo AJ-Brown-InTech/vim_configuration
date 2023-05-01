@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "Removing any existing nvim installations..."
+rm -rf nvim-macos
+rm -rf ~/.local/share/nvim
+rm -rf ~/.config/nvim
+
 echo "Installing neovim..."
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
 tar xzf nvim-macos.tar.gz
@@ -19,7 +24,6 @@ brew install --cask font-fira-mono-for-powerline
 echo "installing lazy git, using the Tap version which is LTS for homebrew but use (brew install lazygit) for the core installation"
 brew update
 brew install jesseduffield/lazygit/lazygit
-#!/bin/bash
 
 # Check for .zshrc or .bashrc
 if [ -f ~/.zshrc ]; then
@@ -53,6 +57,7 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 echo "Installing Astro vim"
 cd ~/.config/nvim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+cd ~/.config/nvim/
 mkdir user/
 cd user/
 git clone https://github.com/AJ-Brown-InTech/Astro_config ~/.config/nvim/lua/user

@@ -22,7 +22,14 @@ Open the file and add the following lines to the file:
 
 ```lua
 -- Install vim-plug
-
+vim.fn.system({
+  'curl', '-fLo',
+  vim.fn.stdpath('data') .. '/site/autoload/plug.vim',
+  '--create-dirs',
+  'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+})
+-- Set the font to Hack Nerd Font
+vim.o.guifont = "FiraCode Nerd Font Mono:h24"
 ```
 
 This will install the vim-plug package manager and set the font to Hack Nerd Font.

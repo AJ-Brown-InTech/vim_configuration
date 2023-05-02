@@ -19,7 +19,9 @@ brew install font-hack-nerd-font
 brew tap homebrew/cask-fonts && brew install --cask font-complete-nerd-font
 brew install --cask font-aurulent-nerd-font
 brew tap homebrew/cask-fonts #remove? 
-brew install --cask font-fira-mono-for-powerline   
+brew install --cask font-fira-mono-for-powerline
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font   
 
 echo "installing lazy git, using the Tap version which is LTS for homebrew but use (brew install lazygit) for the core installation"
 brew update

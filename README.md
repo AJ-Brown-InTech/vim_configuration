@@ -30,6 +30,9 @@ vim.fn.system({
 })
 -- Set the font to Hack Nerd Font
 vim.o.guifont = "FiraCode Nerd Font Mono:h24"
+vim.o.encoding = "utf-8"
+vim.g.airline_powerline_fonts = 1
+
 ```
 
 This will install the vim-plug package manager and set the font to Hack Nerd Font.

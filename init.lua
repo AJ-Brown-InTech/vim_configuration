@@ -309,4 +309,27 @@ return {
 		"lewis6991/gitsigns.nvim",
 		require("gitsigns").setup(),
 	},
+	{
+		"voldikss/vim-floaterm",
+		cmd = {
+			"FloatermNew",
+			"FloatermToggle",
+			"FloatermShow",
+			"FloatermHide",
+			"FloatermKill",
+		},
+		config = function()
+			vim.g.floaterm_title = ""
+			vim.g.floaterm_borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" }
+			vim.g.floaterm_width = 0.9
+			vim.g.floaterm_height = 0.9
+			vim.g.floaterm_position = "center"
+		end,
+	},
+	{
+	vim.cmd('augroup autosave'),
+	vim.cmd('autocmd!'),
+	vim.cmd('autocmd InsertLeave,BufLeave * silent! write'),
+	vim.cmd('augroup END'),
+	}
 }
